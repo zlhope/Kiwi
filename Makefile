@@ -125,6 +125,7 @@ help:
 .PHONY: coverity
 coverity:
 	@echo 'Everything is handled by the Coverity add-on in Travis'
+	cat cov-int/scm_log.txt
 
 
 .PHONY: build-for-pypi

@@ -37,8 +37,6 @@ class BugField(forms.CharField):
                 bug_id = int(bug_id)
             except ValueError as error:
                 raise forms.ValidationError(error)
-            if abs(bug_id) > 8388607:
-                raise forms.ValidationError(error)
 
 
 # =========== Forms for create/update ==============
